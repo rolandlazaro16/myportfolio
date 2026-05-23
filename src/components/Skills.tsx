@@ -34,29 +34,29 @@ export default function Skills() {
           {skills.map((skill) => (
             <article
               key={skill.name}
-              className="group rounded-2xl border border-white/10 bg-slate-950/60 p-7 transition hover:border-brand-500/40 hover:bg-slate-900/80"
+              className="group rounded-2xl border border-black/10 bg-white p-7 transition hover:border-brand-500/40 hover:bg-brand-50/50"
             >
-              <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-brand-500/15 text-brand-400 transition group-hover:bg-brand-500/25 group-hover:text-brand-300">
+              <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-brand-100 text-brand-600 transition group-hover:bg-brand-200 group-hover:text-brand-700">
                 {iconMap[skill.icon]}
               </div>
-              <h3 className="mt-5 text-lg font-semibold text-white">{skill.name}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-slate-400">
+              <h3 className="mt-5 text-lg font-semibold text-black">{skill.name}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-black/60">
                 {skill.description}
               </p>
             </article>
           ))}
         </div>
 
-        <div className="mt-10 rounded-2xl border border-accent/30 bg-accent/5 p-6 sm:p-8">
+        <div className="mt-10 rounded-2xl border border-brand-500/30 bg-brand-50 p-6 sm:p-8">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-wider text-accent">
+              <p className="text-sm font-semibold uppercase tracking-wider text-brand-600">
                 Industry Training
               </p>
-              <h3 className="mt-1 text-xl font-bold text-white">{experience.organization}</h3>
-              <p className="mt-2 max-w-2xl text-slate-400">{experience.summary}</p>
+              <h3 className="mt-1 text-xl font-bold text-black">{experience.organization}</h3>
+              <p className="mt-2 max-w-2xl text-black/60">{experience.summary}</p>
             </div>
-            <span className="inline-flex shrink-0 items-center justify-center rounded-full border border-accent/40 bg-accent/10 px-4 py-2 text-sm font-medium text-accent">
+            <span className="inline-flex shrink-0 items-center justify-center rounded-full border border-brand-500/40 bg-white px-4 py-2 text-sm font-medium text-brand-700">
               {experience.role}
             </span>
           </div>
